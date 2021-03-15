@@ -1,4 +1,4 @@
-require('@tensorflow/tfjs-node')
+require('@tensorflow/tfjs-node');
 const tf = require('@tensorflow/tfjs');
 
 const intersectArrayIndex = (sentences, voc) => {
