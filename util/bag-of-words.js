@@ -33,7 +33,6 @@ const buildVoc = (features) => {
 
     const vocArray = Array.from(vocSet).sort();
 
-    console.log('Made voc with ' + vocArray.length + ' words');
     return vocArray;
 };
 
@@ -45,9 +44,6 @@ const searchForWordsAndReturnIndex = (features, voc) => {
         const indexes = intersectArrayIndex(words, voc);
         indexesArray.push(indexes);
     });
-
-    console.log('One-hot encoding done!');
-
     return indexesArray;
 };
 
