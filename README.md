@@ -6,4 +6,4 @@ Github link: https://github.com/YaboyJari/machine-learning-shared.
 
 # What does it have now?
 
-**Bag of Words:** given a array of sentences, makes a voc and creates a dense tensor from a sparse tensor.
+**Bag of Words:** given an array of sentences, makes a voc and creates a dense tensor.
