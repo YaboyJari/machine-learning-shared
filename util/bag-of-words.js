@@ -84,8 +84,10 @@ const setSparseToDenseTensor = (featureIndexes, voc) => {
 };
 
 // this expects features as a sentences array
-const getTensorsFromBagOfWords = async (features) => {
-    const voc = buildVoc(features);
+const getTensorsFromBagOfWords = async (features, voc) => {
+    if (!voc) {
+        voc = buildVoc(features);
+    };
     const indexesOfFeatures = searchForWordsAndReturnIndex(features, voc);
     return transferToTensorData(indexesOfFeatures, voc);
 };
