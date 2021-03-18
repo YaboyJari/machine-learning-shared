@@ -105,4 +105,5 @@ const transferToTensorData = (features, voc) => {
 
 module.exports = {
     getTensorsFromBagOfWords,
+    buildVoc,
 }
